@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminContext" prefHeight="725.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashboardFormController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="725.0" prefWidth="200.0" style="-fx-background-color: #786fa6;">
+         <children>
+            <JFXButton layoutX="10.0" layoutY="309.0" onAction="#btnMostMovableItemOnAction" prefHeight="60.0" prefWidth="181.0" style="-fx-background-color: #fab1a0;" text="Most Movable Item">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+               <effect>
+                  <BoxBlur height="78.93" />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="380.0" onAction="#btnLeastMovableItemOnAction" prefHeight="60.0" prefWidth="181.0" style="-fx-background-color: #fab1a0;" text="Least Movable Item">
+               <font>
+                  <Font name="Bell MT Bold" size="17.0" />
+               </font>
+               <effect>
+                  <BoxBlur height="78.93" />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="41.0" layoutY="508.0" onAction="#btnManageItemsOnAction" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: #badc58;" text="Manage Items">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+               <effect>
+                  <BoxBlur height="78.93" />
+               </effect>
+            </JFXButton>
+            <Label layoutX="49.0" layoutY="187.0" prefHeight="38.0" prefWidth="144.0" style="-fx-background-color: #badc58;" text="System Reports" textFill="#011717">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <effect>
+                  <Glow level="0.0" />
+               </effect>
+            </Label>
+            <JFXButton layoutX="10.0" layoutY="250.0" onAction="#btnIncomeOnAction" prefHeight="52.0" prefWidth="181.0" style="-fx-background-color: #fab1a0;" text="Income">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+               <effect>
+                  <BoxBlur height="78.93" />
+               </effect>
+            </JFXButton>
+            <ImageView fitHeight="158.0" fitWidth="190.0" layoutX="4.0" pickOnBounds="true">
+               <image>
+                  <Image url="@assests/First%20page%20photo.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblName" layoutX="58.0" prefHeight="43.0" prefWidth="85.0" text="Ideal" textFill="#4313d3">
+               <font>
+                  <Font name="Brush Script MT Italic" size="44.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="4.0" layoutY="186.0" pickOnBounds="true">
+               <image>
+                  <Image url="@assests/rate_review_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="34.0" layoutX="4.0" layoutY="508.0" pickOnBounds="true">
+               <image>
+                  <Image url="@assests/category_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="44.0" layoutY="660.0" onAction="#btnLogOutOnAction" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #8e44ad;" text="Log Out" textFill="#f5efef">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children></Pane>
+      <Pane layoutX="200.0" layoutY="2.0" prefHeight="61.0" prefWidth="1202.0" style="-fx-background-color: #778ca3;">
+         <children>
+            <Label layoutX="35.0" layoutY="18.0" prefHeight="21.0" prefWidth="61.0" text="Date :" textFill="#007190">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="96.0" layoutY="23.0" text="2022-03-15" textFill="#02161b">
+               <font>
+                  <Font name="Britannic Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="973.0" layoutY="16.0" prefHeight="27.0" prefWidth="75.0" text="Time :" textFill="#007697">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="367.0" layoutY="14.0" prefHeight="34.0" prefWidth="424.0" text="Ideal Family SuperMarket" textFill="#100b68">
+               <font>
+                  <Font name="Constantia Bold Italic" size="29.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Glow />
+         </effect>
+      </Pane>
+      <AnchorPane fx:id="mainContext" layoutX="200.0" layoutY="61.0" prefHeight="664.0" prefWidth="1202.0" style="-fx-background-color: #574b90;">
+         <effect>
+            <Glow level="0.0" />
+         </effect></AnchorPane>
+      <Label fx:id="lblTime" layoutX="1241.0" layoutY="19.0" prefHeight="26.0" prefWidth="110.0" text="22:34:40" textFill="#2d3436">
+         <font>
+            <Font name="Britannic Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
